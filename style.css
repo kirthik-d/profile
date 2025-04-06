@@ -1,0 +1,489 @@
+/* UTILITIES */
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+ font-family: cursive;
+}
+a {
+ text-decoration: none;
+}
+li {
+ list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px;
+ background-color: #282fe6;
+ color: #fff;
+}
+.nav-links a {
+ color: #fff;
+}
+/* LOGO */
+.logo {
+ width:20%;
+ display: flex;
+}
+/* NAVBAR MENU */
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 18px;
+}
+.menu li:hover {
+ background-color:#282fe6;
+ border-radius: 5px;
+ transition: 0.3s ease;
+}
+.menu li {
+ padding: 5px 14px;
+}
+ 
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+ display: none;
+} 
+/*HAMBURGER MENU*/
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+.menu { 
+ display:none;
+ position: absolute;
+ background-color:#282fe6;
+ right: 0;
+ left: 0;
+ text-align: center;
+ padding: 16px 0;
+}
+.menu li:hover {
+ display: inline-block;
+ background-color:#282fe6;
+ transition: 0.3s ease;
+}
+.menu li + li {
+ margin-top: 12px;
+}
+input[type=checkbox]:checked ~ .menu{
+ display: block;
+}
+.hamburger {
+ display: block;
+}
+}
+
+header{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 3rem;
+   margin: auto;
+   flex-wrap: wrap;
+}
+
+header div#img-rocket {
+   display: flex;
+   justify-content: center;
+}
+
+header div p{
+   display: flex;
+   font-size: 2.1vw;
+   padding: 0rem;
+   text-align:justify;
+   font-weight: 700;
+   color: #3d5fe6;
+}
+
+header div span{
+   display: flex;
+   font-size: 2.1vw;
+   font-weight: 500;
+   color: #3d5fe6;
+}
+
+header div#img-rocket img{
+   display:flex;
+   width: 40%;
+}
+
+section#about{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem;
+   background-color: #3d5fe6;
+  flex-wrap: wrap;
+}
+
+
+section#about div img{
+   display: flex;
+   width: 25%;
+   border-radius: 50%;
+   margin: auto;
+}
+
+section#about div p{
+   display: flex;
+   justify-content: center;
+   font-size: 2.1vw;
+   text-align: justify;
+   color: #fff;
+   padding-left: 3.5%;
+   padding-right: 3.5%;
+}
+
+section#projects{
+   display: flex;  
+   justify-content: center; 
+   align-items: center;  
+   padding: 3rem;  
+   flex-wrap: wrap;
+}
+
+section#projects div{
+   width: 20rem;
+}
+
+section#projects div img{
+   display: block;
+   margin: auto;
+}
+
+section#projects div h2{
+   text-align: center;
+   padding: 1rem;
+}
+
+section#projects div p{
+   text-align: justify;
+}
+
+section#projects div{
+   padding: 2rem;
+}
+
+section#projects div button{
+   border: 2px solid #3d5fe6;
+   background-color: #fff;
+   color: #3d5fe6;
+   padding: 1rem;
+   font-size: 1.8vw;
+   font-weight: 600;
+   border-radius: .5rem;
+   display: block;
+   margin: auto;
+   margin-top: 2rem;
+   cursor: pointer;
+   transition: .6s ease-out;
+}
+
+section#projects div button:hover{
+   background-color: #3d5fe6;
+   color: #fff;
+   transform: scale(1.2);
+}
+
+section#skills{
+   padding: 3rem 10rem 3rem 10rem;
+   background-color: #d7e7ff;
+}
+
+section#skills h2{
+   text-align: center;
+   font-size: 2.5rem;
+   margin-bottom: 2rem;
+}
+
+section#skills p{
+   padding-left: 12%;
+   font-size: 1.3rem;
+   font-weight: 600;
+}
+
+section#skills div{
+   display: flex;
+   border: 1px solid #3d5fe6;
+   border-radius: 1rem;
+   width: 80%;
+}
+
+section#skills div span#python{
+   background-color: #3d5fe6;
+   color: #fff;
+   text-align: center;
+   padding: .3rem;
+   border-radius: 1rem;
+   width: 80%;
+}
+
+section#skills div span#c{
+   background-color: #3d5fe6;
+   color: #fff;
+   text-align: center;
+   padding: .3rem;
+   border-radius: 1rem;
+   width: 70%;
+}
+
+section#skills div span#html{
+   background-color: #3d5fe6;
+   color: #fff;
+   text-align: center;
+   padding: .3rem;
+   border-radius: 1rem;
+   width: 70%;
+}
+
+
+/* Get in touch */
+section#contact {
+   padding: 3rem 10rem 3rem 10rem;  
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;  
+}
+
+section#contact div#networks{
+   width: 100%; 
+}
+
+section#contact div#networks h3{
+   text-align: center;  
+   font-size: 2.0rem; 
+    display: block;
+}
+
+section#contact div#networks div#icons{
+   display: flex;
+   justify-content: center;
+}
+
+section#contact div#networks div#icons a{
+   text-decoration: none;  
+   color: #0066ff;
+   font-size: 4rem;
+   padding: 2rem;
+   transition: all .4s ease-out;  
+}
+
+ 
+section#contact div#networks div#icons a:hover{
+   color: #71aaff;
+}
+
+section#contact div #networks div#icons a i{
+   transition: all .4s ease-out;
+}
+
+ 
+section#contact div#networks div#icons a i:hover{
+   transform: scale(1.2);
+}
+
+section#contact div#form{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+section#contact div#form h3{
+   width: 100%;
+   text-align: center;
+   font-size: 2.0rem;
+   margin-bottom: 2rem;
+}
+
+section#contact div#form form{
+   width: 100%;
+}
+
+
+section#contact div#form form input, textarea{
+   width: 100%;
+   padding: .5rem;
+   font-size: 1.2rem;
+   border: 1px solid #ccc;
+   margin-top: .5rem;
+   margin-bottom: 1rem;
+   outline: none;  
+}
+
+section#contact div#form form label{
+   font-size: 1.2rem;
+}
+
+section#contact div#form form button{
+   border: 2px solid #3359ec;
+   background-color: #fff;
+   color: #3359ec;
+   padding: 1rem;
+   font-size: 1.8vw;
+   font-weight:600;
+   border-radius: .5rem;
+   display: block;
+   margin: auto;
+   margin-top: 2rem;
+   cursor: pointer;
+   transition: .6s ease-out;
+   width:40%;
+}
+
+
+section#contact div#form form button:hover{
+   background-color: #3359ec;
+   color: #fff;
+   transform: scale(1.2);
+}
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(73, 122, 255, .8);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+  
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgb(73, 122, 255);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+/*
+
+section#contact {
+   padding: 3rem 10rem 3rem 10rem;  
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;  
+}
+
+section#contact div#networks{
+   width: 100%; 
+}
+
+section#contact div#networks h3{
+   text-align: center;  
+   font-size: 2.5rem; 
+   margin-bottom: 2rem;  
+}
+
+section#contact div#networks div#icons{
+   justify-content: center;
+}
+
+section#contact div#networks div#icons a{
+   text-decoration: none;  
+   color: #0066ff;
+   font-size: 4rem;
+   padding: 2rem;
+   transition: all .4s ease-out;  
+}
+
+ 
+section#contact div#networks div#icons a:hover{
+   color: #71aaff;
+}
+
+section#contact div #networks div#icons a i{
+   transition: all .4s ease-out;
+}
+
+ 
+section#contact div#networks div#icons a i:hover{
+   transform: scale(1.2);
+}
+
+section#contact div#form{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+section#contact div#form h3{
+   width: 100%;
+   text-align: center;
+   font-size: 3.1rem;
+   margin-bottom: 1rem;
+}
+
+section#contact div#form form{
+   width: 100%;
+}
+
+
+section#contact div#form form input, textarea{
+   width: 100%;
+   padding: .5rem;
+   font-size: 2.1rem;
+   border: 2px solid #ccc;
+   margin-top: .5rem;
+   margin-bottom: 1rem;
+   outline: none;  
+}
+
+section#contact div#form form label{
+   font-size: 1.2rem;
+}
+
+section#contact div#form form button{
+   border: 1px solid #3d5fe6;
+   background-color: #fff;
+   color: #3d5fe6;
+   padding: 1rem;
+   font-size: .8vw;
+   font-weight: 600;
+   border-radius: .5rem;
+   display: block;
+   margin: auto;
+   cursor: pointer;
+   transition: .6s ease-out;
+   width: 60%;
+}
+
+section#contact div#form form button:hover{
+   background-color: #3d5fe6;
+   color: #fff;
+   transform: scale(1.0);
+}
+*/

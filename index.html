@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <title>Portfolio</title>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo">
+      <div class="logo">
+        <!-- NAVIGATION MENU -->
+        <img src="logo.png" alt="The Logo of Project Rock" height="100px" width="55px">
+      </div>
+    </div>
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills </a></li>
+        <li><a href="#contact">Contact</a></li>
+      </div>
+    </ul>
+  </nav>
+  <header id="home">
+
+    <div>
+      <p> "A Person who is happy is not because everything is right in his life, he is happy because his attitude
+        towards everything in his life is right!" </p>
+      <span>Sundar Pichai, CEO at Google</span>
+    </div>
+
+    <div id="img-rocket">
+      <img src="./rocket.png" />
+    </div>
+
+  </header>
+
+  <section id="about">
+    <div id="profile">
+      <img src="./profile.png">
+    </div>
+
+    <div>
+      <p>
+        I believe in the power of education as a transforming agent of realities, that's because I had the opportunity
+        to graduate from a higher education course in information technology, it changed my social and economic reality,
+        giving me resources to study even more. From there, I was encouraged to start my tech career. I have been taught
+        web development, computer fundamentals and Software development. I have done my internships at different
+        companies. I worked in Full Stack Web Development, Software developer and datascience intern, this incredible
+        experience allows me to work directly in a social impact project, it teaches me a lot to learn and to teach. I
+        love what I do, this is my vocation, to be a software developer, to influence and motivate people!</p>
+    </div>
+    </div>
+
+  </section>
+
+  <section id="projects">
+
+    <div>
+      <img src="./piclorem.png" alt="">
+      <h2>Lab report digitalization Project</h2>
+      <p> Developed to overcome the problem for
+        blind people using Optical Character Recognition in OpenCV to assist them to read text from ch pattern to reading document.
+      </p>
+      <button>View Project</button>
+    </div>
+
+    <div>
+      <img src="./piclorem.png" alt="">
+      <h2>Titanic Survivors data analysis project</h2>
+      <p>This is the machine learning model to identify the survival rate of different kind of people in given data set
+        by finding co relation between all columns with a better accuracy.
+      </p>
+      <button>View Project</button>
+    </div>
+
+    <div>
+      <img src="./piclorem.png" alt="">
+      <h2>Loan Management Project</h2>
+      <p>This system manages the process of originating loan orders, modifying/updating, and cancelling loan related
+        information. Also added the authentication for login and sign up of users using JWT. The project is developed
+        using web apis, C# and Angular</p>
+      <a href="https://github.com/kirthik-d/LoanMSAngularRoutingApp" target="_blank">
+        <button>View Project</button>
+      </a>
+    </div>
+
+    <!--<div>
+      <img src="./piclorem.png" alt="">
+      <h2>Project 4</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque odit eligendi optio deleniti, recusandae
+        eveniet veniam architecto ipsum voluptate delectus modi beatae fugit voluptatum. Ipsam, asperiores! Culpa
+        officiis et perferendis.</p>
+      <button>Veja mais</button>
+    </div>-->
+
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+
+    <p>Python</p>
+    <center>
+      <div>
+        <span id="python">80%</span>
+      </div>
+    </center>
+
+    <p>C</p>
+    <center>
+      <div>
+        <span id="c">70%</span>
+      </div>
+    </center>
+    <p>Html</p>
+    <center>
+      <div>
+        <span id="html">70%</span>
+      </div>
+    </center>
+
+  </section>
+
+
+  <!-- Contact -->
+
+  <section id="contact">
+
+    <div id="networks">
+      <h3>Social media profiles</h3>
+
+      <div id="icons">
+        <a href="https://www.linkedin.com/in/kirthik-d-712b941b7/" target="_blank">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+
+        <a href="https://github.com/kirthik-d" target="_blank">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+
+    </div>
+
+    <div id="form">
+
+      <h3>Get it touch with me</h3>
+
+      <form action="#" id="form" method="post" name="form">
+
+        <label for="vname">Name</label>
+        <input id="name" name="vname" type="text">
+
+        <label for="vemail">E-mail</label>
+        <input type="email" id="vemail" name="email">
+
+        <label for="sub">Subject</label>
+        <input name="sub" placeholder="Subject" type="text" value="">
+
+        <label for="msg">Message</label>
+        <textarea name="msg" id="message" cols="10" rows="5"></textarea>
+        <a href="secure_email_form.php">
+          <button id="submit" name="submit">Submit</button>
+        </a>
+      </form>
+
+
+    </div>
+
+
+  </section>
+
+
+  <!-- Contact -->
+
+
+  <a href="javascript:" id="return-to-top"><i class="icon fa fa-chevron-up"></i></a>
+  <!-- Return to Top -->
+
+  <script>
+    // ===== Scroll to Top ==== 
+    $(window).scroll(function () {
+      if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+      } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+      }
+    });
+    $('#return-to-top').click(function () {      // When arrow is clicked
+      $('body,html').animate({
+        scrollTop: 0                       // Scroll to top of body
+      }, 500);
+    });
+  </script>
+
+
+</body>
+
+</html>
